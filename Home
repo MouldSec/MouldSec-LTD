@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MouldSec LTD - Professional Security Guard Services</title>
+  <style>
+    /* Reset & Basics */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+
+    /* Header & Nav */
+    header { background:#1a1a1a; color:#fff; padding:20px 0; }
+    .container { width:90%; max-width:1200px; margin:0 auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; }
+    .logo img { height:50px; }
+    .nav-links li { display:inline-block; margin-left:20px; }
+    .nav-links a { color:#fff; font-weight:500; }
+
+    /* Hero Section */
+    .hero { background:url('hero-bg.jpg') center/cover no-repeat; height:70vh; display:flex; align-items:center; justify-content:center; color:#fff; text-align:center; }
+    .hero h1 { font-size:2.5rem; margin-bottom:10px; }
+    .hero p { font-size:1.2rem; margin-bottom:20px; }
+    .btn { background:#007bff; color:#fff; padding:10px 20px; border:none; border-radius:4px; cursor:pointer; }
+
+    /* Sections */
+    section { padding:60px 0; }
+    .services .card { border:1px solid #ddd; padding:20px; border-radius:4px; transition:box-shadow .3s; }
+    .services .card:hover { box-shadow:0 2px 8px rgba(0,0,0,0.15); }
+    .services .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+
+    /* Sign Up Form */
+    .signup form { display:grid; grid-gap:15px; }
+    .signup input, .signup select, .signup textarea { padding:10px; border:1px solid #ccc; border-radius:4px; width:100%; }
+    .signup button { width:fit-content; }
+
+    /* Contact Form */
+    .contact form { display:grid; grid-gap:15px; }
+    .contact input, .contact textarea { padding:10px; border:1px solid #ccc; border-radius:4px; }
+    .contact button { width:fit-content; }
+
+    /* Footer */
+    footer { background:#f4f4f4; text-align:center; padding:20px 0; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="goggles.png" alt="MouldSec LTD Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>MouldSec LTD</h1>
+      <p>Reliable SIA-Licensed Security Guards at Competitive Rates</p>
+      <button class="btn" onclick="location.href='signup.html'">Find a Job</button>
+    </div>
+  </section>
+
+  <section class="services container" id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Static Guarding</h3>
+        <p>24/7 presence at your site to deter theft, vandalism, and ensure safety.</p>
+      </div>
+      <div class="card">
+        <h3>Event Security</h3>
+        <p>Smart crowd management, access control, and incident response for events big and small.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Patrols</h3>
+        <p>Random and scheduled patrols with rapid response vehicles for peace of mind.</p>
+      </div>
+      <div class="card">
+        <h3>Retail Loss Prevention</h3>
+        <p>Experienced guards trained to spot and prevent shoplifting and internal theft.</p>
+      </div>
+      <div class="card">
+        <h3>Close Protection</h3>
+        <p>Professional bodyguard services for VIPs, executives, and high-risk individuals in any environment.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="about container" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>MouldSec LTD</strong>, a brand new startup dedicated to linking SIA-trained guards with employers through a smooth, straightforward process. Our mission is to ensure that fully vetted, licensed professionals can connect with the right assignments quickly and easily, while clients receive top-tier security services backed by rigorous BS7858 vetting and comprehensive insurance cover.</p>
+    <ul>
+      <li>All guards hold current SIA licences</li>
+      <li>BS7858 background checks</li>
+      <li>Public & employer liability insurance</li>
+      <li>Flexible subcontractor or employee options</li>
+    </ul>
+  </section>
+
+  <section class="contact container" id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@mouldsecltd.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:20px;">Or call us directly at <strong>+44 1234 567890</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MouldSec LTD. All rights reserved.</p>
+    <p>Registered in England & Wales, Company No. XXXXXXXX</p>
+  </footer>
+
+</body>
+</html>
